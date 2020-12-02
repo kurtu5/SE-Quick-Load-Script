@@ -115,6 +115,7 @@ For key, value in Buttons
 	SetButton("CopyEditor_Button", "Click the Copy to Editor button")
 	SetButton("OK_Button", "Click the OK button")
 	SetButton("ClearSearch_Button", "Click the X to clear the search")
+	trained := true
 	IniWrite, true, %ConfigFile%, main, trained
 	Prompt("Successfully trained buttons and search strings!", 2000)
 	Return
@@ -129,7 +130,7 @@ For key, value in Buttons
 		
 ;; Used trained button locations to refresh script source
 !k::
-	if (!%trained%)
+	if (%trained% == false)
 	{
 		Prompt("Use hotkey Shift+Alt+K to train buttons and search strings.", 5000)
 		Return
