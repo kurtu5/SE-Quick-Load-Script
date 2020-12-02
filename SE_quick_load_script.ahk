@@ -158,6 +158,7 @@ For key, value in Buttons
 	Sleep %speed%
 	PushButton("OK_Button")
 	Sleep %speed%
+	Sleep 500
 	PushButton("ClearSearch_Button")
 	BlockInput, Off
 	Return
