@@ -129,7 +129,7 @@ For key, value in Buttons
 		
 ;; Used trained button locations to refresh script source
 !k::
-	if (!trained)
+	if (!%trained%)
 	{
 		Prompt("Use hotkey Shift+Alt+K to train buttons and search strings.", 5000)
 		Return
