@@ -147,6 +147,7 @@ For key, value in Buttons
 	PushButton("Edit_Button")
 	Sleep %speed%
 	PushButton("BrowseScripts_Button")
+	Sleep 500
 	Sleep %speed%
 	PushButton("ScriptSearchFocus_Button")
 	Sleep %speed%
